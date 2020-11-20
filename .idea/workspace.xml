@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5a2104c-216a-45c3-a3b5-107f956cfa32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study01" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +16,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="$USER_HOME$/soft/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$USER_HOME$/soft/apache-maven-3.6.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -24,8 +26,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1kXeddoMGxrBKwyWY5yVqQ46jfW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1kXi52clZSyHHAhwqOCT49U7xc7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -35,19 +36,31 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="study" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e5a2104c-216a-45c3-a3b5-107f956cfa32" name="Default Changelist" comment="" />
-      <created>1605851451751</created>
+      <changelist id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="" />
+      <created>1605853149082</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605851451751</updated>
-      <workItem from="1605851455856" duration="156000" />
+      <updated>1605853149082</updated>
+      <workItem from="1605853153828" duration="1983000" />
     </task>
     <servers />
   </component>
@@ -55,13 +68,61 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="221" y="89" key="SettingsEditor" timestamp="1605851525832">
+    <state x="303" y="49" key="CommitChangelistDialog2" timestamp="1605855452281">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605851525832" />
-    <state x="97" y="154" key="new project wizard" timestamp="1605851609490">
+    <state x="303" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605855452281" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1605854698835">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="97" y="154" key="new project wizard/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605851609490" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698835" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1605854698833">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698833" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1605854698832">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698832" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1605854698834">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698834" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1605854698838">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698838" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1605854698837">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698837" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1605854698836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698836" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1605854698837">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698837" />
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1605854698841">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698841" />
+    <state width="1398" height="303" key="GridCell.Tab.2.center" timestamp="1605854698840">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698840" />
+    <state width="1398" height="303" key="GridCell.Tab.2.left" timestamp="1605854698839">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698839" />
+    <state width="1398" height="303" key="GridCell.Tab.2.right" timestamp="1605854698841">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854698841" />
+    <state x="221" y="63" key="SettingsEditor" timestamp="1605854132643">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1605854132643" />
   </component>
 </project>
