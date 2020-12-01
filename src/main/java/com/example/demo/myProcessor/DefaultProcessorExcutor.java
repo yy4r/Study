@@ -1,6 +1,5 @@
 package com.example.demo.myProcessor;
 
-import com.example.demo.component.T;
 import com.example.demo.myProcessor.context.ProcessContext;
 import com.example.demo.myProcessor.context.ProcessResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,19 +28,19 @@ public class DefaultProcessorExcutor {
     public void execute(ProcessContext context) {
         // TODO: 2020/12/1 做个责任链
         factory.getBeforeList().parallelStream().forEach((node) -> {
-            ProcessResult<T> process = node.process(context);
+            ProcessResult process = node.process(context);
             if (!process.getIsSuccess()) {
                 return;
             }
         });
         factory.getServiceList().parallelStream().forEach((node) -> {
-            ProcessResult<T> process = node.process(context);
+            ProcessResult process = node.process(context);
             if (!process.getIsSuccess()) {
                 return;
             }
         });
         factory.getAfterList().parallelStream().forEach((node) -> {
-            ProcessResult<T> process = node.process(context);
+            ProcessResult process = node.process(context);
             if (!process.getIsSuccess()) {
                 return;
             }
