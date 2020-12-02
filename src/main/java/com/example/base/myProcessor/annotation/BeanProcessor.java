@@ -19,9 +19,9 @@ public class BeanProcessor implements BeanPostProcessor, ApplicationContextAware
          */
 //        Environment environment = applicationContext.getEnvironment();
 //        String aaaa = environment.getProperty("aaaa");
-        if (bean.getClass().isAnnotationPresent(NodeType.class)) {
-            NodeType nodeType = bean.getClass().getAnnotation(NodeType.class);
-            ((CustomProcessNode) bean).setType(nodeType.type());
+        if (bean.getClass().isAnnotationPresent(ProcessType.class)) {
+            ProcessType processType = bean.getClass().getAnnotation(ProcessType.class);
+            ((CustomProcessNode) bean).setType(processType.type());
         }
         return bean;
     }

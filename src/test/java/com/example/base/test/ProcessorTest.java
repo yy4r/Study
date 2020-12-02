@@ -1,7 +1,6 @@
 package com.example.base.test;
 
 import com.example.base.myProcessor.Trigger;
-import com.example.base.myProcessor.context.MyContext;
 import com.example.base.myProcessor.context.ProcessContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;

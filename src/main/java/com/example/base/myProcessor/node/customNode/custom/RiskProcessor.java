@@ -1,6 +1,6 @@
 package com.example.base.myProcessor.node.customNode.custom;
 
-import com.example.base.myProcessor.annotation.NodeType;
+import com.example.base.myProcessor.annotation.ProcessType;
 import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;
 import com.example.base.myProcessor.node.customNode.CustomProcessNode;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-@NodeType(type = "risk")
+@ProcessType(type = "risk")
 public class RiskProcessor implements CustomProcessNode {
 
     private String type;
