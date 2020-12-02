@@ -1,5 +1,6 @@
 package com.example.base.myProcessor.context;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Data
+@Builder
 public class ProcessContext {
 
     private String id;

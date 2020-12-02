@@ -24,7 +24,7 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware 
 
     private Map<String, Processor> factory = new ConcurrentHashMap<>();
     // TODO: 2020/12/1 可考虑更换成map
-    private Map<String, List<Processor>> map = new ConcurrentHashMap<>();
+    private Map<String/**type*/, List<Processor>> map = new ConcurrentHashMap<>();
 
     private List<Processor> beforeList = new ArrayList<>();
 

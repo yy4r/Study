@@ -2,6 +2,7 @@ package com.example.base.test;
 
 import com.example.base.myProcessor.Trigger;
 import com.example.base.myProcessor.context.MyContext;
+import com.example.base.myProcessor.context.ProcessContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,14 +21,11 @@ public class ProcessorTest {
 
     @Test
     public void test() {
-        MyContext context = new MyContext();
-        context.setId("1");
-        context.setMessage("hello 你好");
         List<String> types = new ArrayList<>();
         types.add("risk");
         types.add("limit");
-        context.setTypes(types);
-        trigger.trigger(context);
+        ProcessContext processContext = ProcessContext.builder().id("1").message("hello 你好").types(types).build();
+        trigger.trigger(processContext);
     }
 
 }
