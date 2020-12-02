@@ -8,6 +8,4 @@ import java.lang.annotation.*;
 @Inherited
 public @interface NodeType {
     String type() default "";
-
-    String group() default "";
 }

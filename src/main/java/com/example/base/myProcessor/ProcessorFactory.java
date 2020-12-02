@@ -32,6 +32,8 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware 
 
     private List<Processor> afterList = new ArrayList<>();
 
+    private List<Processor> customList = new ArrayList<>();
+
     //工厂初始化
     @PostConstruct
     public void init() {

@@ -4,11 +4,5 @@ import com.example.base.myProcessor.context.ProcessResult;
 import com.example.base.myProcessor.context.ProcessContext;
 
 public interface Processor {
-
-ProcessResult process(ProcessContext context);
-
-    default String setType() {
-        return "";
-    }
-
+    ProcessResult process(ProcessContext context);
 }

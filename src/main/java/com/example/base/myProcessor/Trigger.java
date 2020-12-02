@@ -3,6 +3,7 @@ package com.example.base.myProcessor;
 import com.example.base.myProcessor.node.commonNode.after.AfterProcessor;
 import com.example.base.myProcessor.node.commonNode.before.BeforeProcessor;
 import com.example.base.myProcessor.context.ProcessContext;
+import com.example.base.myProcessor.node.customNode.CustomProcessNode;
 import com.example.base.myProcessor.node.serviceNode.ServiceProcessNode;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
@@ -40,6 +41,12 @@ public class Trigger implements InitializingBean, ApplicationContextAware{
         Map<String, ServiceProcessNode> serviceProcessNodeMap = applicationContext.getBeansOfType(ServiceProcessNode.class);
         serviceProcessNodeMap.forEach((k, v) -> {
             excutor.addServiceNode(v);
+        });
+
+        //自定义处理
+        Map<String, CustomProcessNode> customProcessNodeMap = applicationContext.getBeansOfType(CustomProcessNode.class);
+        customProcessNodeMap.forEach((k, v) -> {
+            excutor.addCustomNode(v);
         });
 
         //后置处理

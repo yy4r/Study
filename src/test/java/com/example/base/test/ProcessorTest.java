@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProcessorTest {
@@ -20,6 +23,10 @@ public class ProcessorTest {
         MyContext context = new MyContext();
         context.setId("1");
         context.setMessage("hello 你好");
+        List<String> types = new ArrayList<>();
+        types.add("risk");
+        types.add("limit");
+        context.setTypes(types);
         trigger.trigger(context);
     }
 

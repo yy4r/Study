@@ -21,6 +21,10 @@ public class DefaultProcessorExcutor {
         factory.getServiceList().add(node);
     }
 
+    public void addCustomNode(Processor node) {
+        factory.getCustomList().add(node);
+    }
+
     public void addAfterNode(Processor node) {
         factory.getAfterList().add(node);
     }
@@ -39,6 +43,13 @@ public class DefaultProcessorExcutor {
                 return;
             }
         });
+        factory.getCustomList().parallelStream().forEach((node) -> {
+            ProcessResult process = node.process(context);
+            if (!process.getIsSuccess()) {
+                return;
+            }
+        });
+
         factory.getAfterList().parallelStream().forEach((node) -> {
             ProcessResult process = node.process(context);
             if (!process.getIsSuccess()) {
