@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.commonNode.before;
+package com.example.base.myProcessor.node.commonNode.before;
 
 import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;

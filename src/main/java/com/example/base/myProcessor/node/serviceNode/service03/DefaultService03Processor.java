@@ -1,14 +1,15 @@
-package com.example.base.myProcessor.commonNode.before;
+package com.example.base.myProcessor.node.serviceNode.service03;
 
 import com.example.base.myProcessor.context.ProcessResult;
 import com.example.base.myProcessor.context.ProcessContext;
+import com.example.base.myProcessor.node.serviceNode.ServiceProcessNode;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RuleProcessor implements BeforeProcessor {
+public class DefaultService03Processor implements ServiceProcessNode {
     @Override
     public ProcessResult process(ProcessContext context) {
-        System.out.println("规则校验");
+        System.out.println("业务领域执行3");
         return new ProcessResult<>(true);
     }
 }

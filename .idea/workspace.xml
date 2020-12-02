@@ -2,33 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/annotation/NodeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/customNode/CustomProcessNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/customNode/custom/Custom01Processor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/type/TypeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/BaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/DefaultProcessorExcutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/DefaultProcessorExcutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/ProcessorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/Trigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Trigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/commonNode/CommonProcessNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/CommonProcessNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/commonNode/after/AfterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/after/AfterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/commonNode/after/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/after/MessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/commonNode/before/BeforeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/before/BeforeProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/commonNode/before/InitProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/before/InitProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/commonNode/before/RuleProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/before/RuleProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/context/MyContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/context/MyContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/context/ProcessContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/context/ProcessContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/context/ProcessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/context/ProcessResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/message/MessageContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/message/MessageContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/message/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/message/MessageListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/ServiceProcessNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/ServiceProcessNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/poll/ServicePoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/poll/ServicePoll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/service01/DefaultService01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service01/DefaultService01Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/service01/Service01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service01/Service01Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/service02/DefaultService02Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service02/DefaultService02Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/service02/Service02Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service02/Service02Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/service03/DefaultService03Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service03/DefaultService03Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/myProcessor/serviceNode/service03/Service03Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service03/Service03Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/BaseApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/test/ProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/test/ProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Trigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Trigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/CommonProcessNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/commonNode/CommonProcessNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/after/AfterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/commonNode/after/AfterProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/after/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/commonNode/after/MessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/before/BeforeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/commonNode/before/BeforeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/before/InitProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/commonNode/before/InitProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/commonNode/before/RuleProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/commonNode/before/RuleProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/ServiceProcessNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/ServiceProcessNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/poll/ServicePoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/poll/ServicePoll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service01/DefaultService01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/DefaultService01Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service01/Service01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/Service01Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service02/DefaultService02Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service02/DefaultService02Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service02/Service02Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service02/Service02Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service03/DefaultService03Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service03/DefaultService03Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/serviceNode/service03/Service03Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service03/Service03Processor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -251,7 +246,7 @@
       <workItem from="1606448326310" duration="62000" />
       <workItem from="1606448790398" duration="4513000" />
       <workItem from="1606806131505" duration="19527000" />
-      <workItem from="1606877305708" duration="292000" />
+      <workItem from="1606877305708" duration="3404000" />
     </task>
     <task id="LOCAL-00001" summary="test start">
       <created>1605855470051</created>
@@ -288,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606877390779</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="base">
+      <created>1606877837775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606877837775</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +336,8 @@
     <MESSAGE value="test start" />
     <MESSAGE value="Processor" />
     <MESSAGE value="更换名字" />
-    <option name="LAST_COMMIT_MESSAGE" value="更换名字" />
+    <MESSAGE value="base" />
+    <option name="LAST_COMMIT_MESSAGE" value="base" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">
@@ -346,20 +349,20 @@
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606810428334" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606388474839" />
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1606875761205">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1606879907705">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606875761205" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606879907704" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606831611614" />
     <state x="300" y="123" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1606295266096">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="300" y="123" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606295266096" />
-    <state x="319" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606822979454">
+    <state x="319" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606877962461">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="319" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606207568530" />
-    <state x="319" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606822979454" />
+    <state x="319" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877962461" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606877505796">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -368,79 +371,79 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606207542139" />
-    <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate" timestamp="1606205810131">
+    <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate" timestamp="1606880529615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606205810131" />
-    <state x="303" y="49" key="CommitChangelistDialog2" timestamp="1606877390522">
+    <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880529615" />
+    <state x="244" y="49" key="CommitChangelistDialog2" timestamp="1606877837586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877390522" />
+    <state x="244" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877837586" />
     <state x="303" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1606830976882" />
     <state width="517" height="466" key="DebuggerActiveHint" timestamp="1606876280295">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="517" height="466" key="DebuggerActiveHint/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606876280295" />
     <state width="517" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1606825881616" />
-    <state width="1398" height="346" key="GridCell.Tab.0.bottom" timestamp="1606877822781">
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1606884923501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478754" />
-    <state width="1398" height="346" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877822781" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606835568743" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880647094" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606884923501" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457293" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-141.1920.1080@0.23.1440.877" timestamp="1606824668476" />
-    <state width="1398" height="346" key="GridCell.Tab.0.center" timestamp="1606877822779">
+    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1606884923499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478752" />
-    <state width="1398" height="346" key="GridCell.Tab.0.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877822779" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606835568742" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880647091" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606884923499" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457290" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.877/1440.-141.1920.1080@0.23.1440.877" timestamp="1606824668474" />
-    <state width="1398" height="346" key="GridCell.Tab.0.left" timestamp="1606877822777">
+    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1606884923498">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478750" />
-    <state width="1398" height="346" key="GridCell.Tab.0.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877822777" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606835568741" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880647089" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606884923498" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457289" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.877/1440.-141.1920.1080@0.23.1440.877" timestamp="1606824668471" />
-    <state width="1398" height="346" key="GridCell.Tab.0.right" timestamp="1606877822780">
+    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1606884923500">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478753" />
-    <state width="1398" height="346" key="GridCell.Tab.0.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877822780" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606835568743" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880647093" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606884923500" />
     <state width="1398" height="303" key="GridCell.Tab.0.right/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457292" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.877/1440.-141.1920.1080@0.23.1440.877" timestamp="1606824668475" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1606876326848">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1606884923504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478570" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606876326848" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606835568746" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880649437" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606884923504" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457183" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1606876326847">
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1606884923503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478569" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606876326847" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606835568744" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880649435" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606884923503" />
     <state width="1398" height="303" key="GridCell.Tab.1.center/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457179" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1606876326846">
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1606884923502">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478568" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606876326846" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606835568744" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880649434" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606884923502" />
     <state width="1398" height="303" key="GridCell.Tab.1.left/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457178" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1606876326848">
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1606884923503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.-118.1920.1057@0.0.1440.900" timestamp="1606456478569" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606876326848" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606835568745" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606880649436" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606884923503" />
     <state width="1398" height="303" key="GridCell.Tab.1.right/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1606198457180" />
     <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1606210461699">
       <screen x="0" y="0" width="1440" height="900" />
@@ -473,10 +476,10 @@
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606459159533" />
     <state x="1735" y="-65" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@1440.-141.1920.1080" timestamp="1606877321388" />
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606808337645" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1606877400213">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1606877843777">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877400213" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606877843777" />
     <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1606806977364">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -507,9 +510,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/type/TypeTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/type/TypeTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

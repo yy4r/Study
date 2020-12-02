@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.serviceNode;
+package com.example.base.myProcessor.node.serviceNode;
 
 import com.example.base.myProcessor.Processor;
 

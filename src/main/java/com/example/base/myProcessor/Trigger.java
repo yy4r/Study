@@ -1,9 +1,9 @@
 package com.example.base.myProcessor;
 
-import com.example.base.myProcessor.commonNode.after.AfterProcessor;
-import com.example.base.myProcessor.commonNode.before.BeforeProcessor;
+import com.example.base.myProcessor.node.commonNode.after.AfterProcessor;
+import com.example.base.myProcessor.node.commonNode.before.BeforeProcessor;
 import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.serviceNode.ServiceProcessNode;
+import com.example.base.myProcessor.node.serviceNode.ServiceProcessNode;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
