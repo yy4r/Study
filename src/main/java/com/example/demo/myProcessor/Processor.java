@@ -7,4 +7,8 @@ public interface Processor {
 
 ProcessResult process(ProcessContext context);
 
+    default String getType() {
+        return "";
+    }
+
 }

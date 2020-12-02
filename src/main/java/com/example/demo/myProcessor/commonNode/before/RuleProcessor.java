@@ -5,10 +5,10 @@ import com.example.demo.myProcessor.context.ProcessResult;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DefaultInitProcessor implements BeforeProcessor {
+public class RuleProcessor implements BeforeProcessor {
     @Override
     public ProcessResult process(ProcessContext context) {
-        System.out.println("初始化");
+        System.out.println("规则校验");
         return new ProcessResult<>(true);
     }
 }

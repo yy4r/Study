@@ -19,7 +19,7 @@ public class ProcessorTest {
     public void test() {
         MyContext context = new MyContext();
         context.setId("1");
-        context.setMessage("message");
+        context.setMessage("hello 你好");
         trigger.trigger(context);
     }
 
