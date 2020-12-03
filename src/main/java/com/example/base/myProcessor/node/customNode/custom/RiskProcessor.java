@@ -19,6 +19,6 @@ public class RiskProcessor implements CustomProcessNode {
         if (context.getTypes().contains(type)) {
             System.out.println("风控执行器执行");
         }
-        return new ProcessResult(true);
+        return ProcessResult.builder().isSuccess(true).build();
     }
 }

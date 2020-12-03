@@ -1,6 +1,6 @@
 package com.example.base.myProcessor.node.commonNode.after;
 
-import com.example.base.myProcessor.event.EventContext;
+import com.example.base.myProcessor.context.EventContext;
 import com.example.base.myProcessor.event.message.MessageEvent;
 import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;
@@ -21,7 +21,7 @@ public class MessageProcessor implements AfterProcessor, ApplicationContextAware
         EventContext eventContext = EventContext.builder().message(message).build();
         MessageEvent messageEvent = new MessageEvent(eventContext);
         applicationContext.publishEvent(messageEvent);
-        return new ProcessResult(true);
+        return ProcessResult.builder().isSuccess(true).build();
     }
 
     @Override

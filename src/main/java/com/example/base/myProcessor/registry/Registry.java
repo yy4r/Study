@@ -1,5 +1,7 @@
 package com.example.base.myProcessor.registry;
 
+import com.example.base.myProcessor.context.RegistryContext;
+
 /**
  * todo 动态注册和删除processor
  */

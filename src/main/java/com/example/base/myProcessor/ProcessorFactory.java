@@ -1,6 +1,6 @@
 package com.example.base.myProcessor;
 
-import com.example.base.myProcessor.event.EventContext;
+import com.example.base.myProcessor.context.EventContext;
 import com.example.base.myProcessor.event.common.BeanHandlerEvent;
 import com.example.base.myProcessor.node.Handler;
 import com.example.base.myProcessor.node.commonNode.AfterHandler;
@@ -66,7 +66,7 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
     @Override
     public void afterPropertiesSet() throws Exception {
         List<Handler> handlers = new ArrayList<>();
-        //责任链事件
+        //责任链事件编排
         BeforeHandler beforeHandler = applicationContext.getBean(BeforeHandler.class);
         CoustomHandler coustomHandler = applicationContext.getBean(CoustomHandler.class);
         ServiceHandler serviceHandler = applicationContext.getBean(ServiceHandler.class);

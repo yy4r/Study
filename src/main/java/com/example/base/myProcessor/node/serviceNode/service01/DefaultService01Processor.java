@@ -9,6 +9,6 @@ public class DefaultService01Processor implements Service01Processor {
     @Override
     public ProcessResult process(ProcessContext context) {
         System.out.println("业务领域执行1");
-        return new ProcessResult<>(true);
+        return ProcessResult.builder().isSuccess(true).build();
     }
 }
