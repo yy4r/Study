@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/annotation/ProcessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/annotation/ProcessType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/strategy/ProcessorStrategySelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/strategy/ProcessorStrategySelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/DefaultService01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/DefaultService01Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/registry/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/registry/Registry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606979061886</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="并发处理优化">
+      <created>1606987196215</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606987196215</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +368,8 @@
     <MESSAGE value="优化链路" />
     <MESSAGE value="添加注册器规范 todo" />
     <MESSAGE value="建造者  -&gt;优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="建造者  -&gt;优化" />
+    <MESSAGE value="并发处理优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="并发处理优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">
@@ -399,10 +408,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894934988" />
-    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1606979061644">
+    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1606987196028">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606979061644" />
+    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606987196028" />
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1606901445360" />
     <state width="517" height="466" key="DebuggerActiveHint" timestamp="1606876280295">
       <screen x="0" y="0" width="1440" height="900" />

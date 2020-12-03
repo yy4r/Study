@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -26,13 +25,17 @@ import java.util.concurrent.ConcurrentHashMap;
 @Data
 public class ProcessorFactory implements BeanNameAware, ApplicationContextAware, InitializingBean {
 
+    /**
+     * 静态工厂
+     */
+    public static Map<String, Processor> factory = new ConcurrentHashMap<>();
+
     private String beanName;
 
     private ApplicationContext applicationContext;
 
     private Handler head;
 
-    private Map<String, Processor> factory = new ConcurrentHashMap<>();
     // TODO: 2020/12/1 可考虑更换成map
     private Map<String/**type*/, List<Processor>> map = new ConcurrentHashMap<>();
 
@@ -44,11 +47,9 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
 
     private List<Processor> customList = new ArrayList<>();
 
-    //工厂初始化
+    //工厂初始化编排
     @PostConstruct
     public void init() {
-        String[] names = applicationContext.getBeanNamesForType(ProcessorFactory.class);
-        System.out.println(Arrays.toString(names)+beanName);
         Map<String, Processor> beansOfType = applicationContext.getBeansOfType(Processor.class);
         factory.putAll(beansOfType);
     }
