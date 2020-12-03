@@ -23,8 +23,8 @@ public class ProcessorStrategySelector implements ProcessorStrategy, Application
         List<Processor> processors = new ArrayList<>();
         Class<Processor> clazz = (Class<Processor>) context.getBean(type).getClass();
         Map<String, Processor> beansOfType = context.getBeansOfType(clazz);
-        beansOfType.forEach((k, v) -> {
-            processors.add(v);
+        beansOfType.entrySet().parallelStream().forEach((entry) -> {
+            processors.add(entry.getValue());
         });
         return processors;
     }

@@ -7,5 +7,8 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Inherited
 public @interface ProcessType {
+    /**
+     * 自定义注解 表示执行器领域type
+     */
     String type() default "";
 }
