@@ -1,31 +1,21 @@
 package com.example.base.myProcessor;
 
 import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.node.commonNode.AfterHandler;
-import com.example.base.myProcessor.node.commonNode.BeforeHandler;
-import com.example.base.myProcessor.node.customNode.CoustomHandler;
-import com.example.base.myProcessor.node.serviceNode.ServiceHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * todo 后续需要扩展，后续可以考虑不交给spring管理 如果修改的话 工厂需要改成静态工厂
+ */
 @Component
-public class DefaultProcessorExcutor {
+public class ProcessorExcutor {
 
     @Autowired
     private ProcessorFactory factory;
 
-    @Autowired
-    private BeforeHandler beforeHandler;
-
-    @Autowired
-    private CoustomHandler coustomHandler;
-
-    @Autowired
-    private ServiceHandler serviceHandler;
-
-    @Autowired
-    private AfterHandler afterHandler;
-
+    /**
+     * todo 后续processorBean工厂换成concurrnethashmap
+     */
     public void addBeforeNode(Processor node) {
         factory.getBeforeList().add(node);
     }
@@ -43,9 +33,9 @@ public class DefaultProcessorExcutor {
     }
 
     public void execute(ProcessContext context) {
-        beforeHandler.setNext(coustomHandler);
-        coustomHandler.setNext(serviceHandler);
-        serviceHandler.setNext(afterHandler);
-        beforeHandler.execute(context);
+        /**
+         * 已优化责任链
+         */
+        factory.getHead().execute(context);
     }
 }

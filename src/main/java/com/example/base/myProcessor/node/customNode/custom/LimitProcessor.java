@@ -19,6 +19,6 @@ public class LimitProcessor implements CustomProcessNode {
         if (context.getTypes().contains(type)) {
             System.out.println("限制校验执行器执行");
         }
-        return new ProcessResult(true);
+        return ProcessResult.builder().isSuccess(true).build();
     }
 }

@@ -9,6 +9,6 @@ public class InitProcessor implements BeforeProcessor {
     @Override
     public ProcessResult process(ProcessContext context) {
         System.out.println("初始化");
-        return new ProcessResult<>(true);
+        return ProcessResult.builder().isSuccess(true).build();
     }
 }

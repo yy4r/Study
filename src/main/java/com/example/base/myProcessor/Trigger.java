@@ -18,7 +18,7 @@ import java.util.Map;
 public class Trigger implements InitializingBean, ApplicationContextAware{
 
     @Autowired
-    private DefaultProcessorExcutor excutor;
+    private ProcessorExcutor excutor;
 
     private ApplicationContext applicationContext;
 
