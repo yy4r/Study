@@ -1,8 +1,16 @@
 package com.example.base.myProcessor;
 
+import com.example.base.myProcessor.event.EventContext;
+import com.example.base.myProcessor.event.common.BeanHandlerEvent;
+import com.example.base.myProcessor.node.Handler;
+import com.example.base.myProcessor.node.commonNode.AfterHandler;
+import com.example.base.myProcessor.node.commonNode.BeforeHandler;
+import com.example.base.myProcessor.node.customNode.CoustomHandler;
+import com.example.base.myProcessor.node.serviceNode.ServiceHandler;
 import lombok.Data;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
@@ -16,11 +24,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 @Data
-public class ProcessorFactory implements BeanNameAware, ApplicationContextAware {
+public class ProcessorFactory implements BeanNameAware, ApplicationContextAware, InitializingBean {
 
     private String beanName;
 
     private ApplicationContext applicationContext;
+
+    private Handler head;
 
     private Map<String, Processor> factory = new ConcurrentHashMap<>();
     // TODO: 2020/12/1 可考虑更换成map
@@ -51,5 +61,22 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        List<Handler> handlers = new ArrayList<>();
+        //责任链事件
+        BeforeHandler beforeHandler = applicationContext.getBean(BeforeHandler.class);
+        CoustomHandler coustomHandler = applicationContext.getBean(CoustomHandler.class);
+        ServiceHandler serviceHandler = applicationContext.getBean(ServiceHandler.class);
+        AfterHandler afterHandler = applicationContext.getBean(AfterHandler.class);
+        handlers.add(beforeHandler);
+        handlers.add(coustomHandler);
+        handlers.add(serviceHandler);
+        handlers.add(afterHandler);
+        head = beforeHandler;
+        EventContext eventContext = EventContext.builder().handlers(handlers).build();
+        applicationContext.publishEvent(new BeanHandlerEvent(eventContext));
     }
 }

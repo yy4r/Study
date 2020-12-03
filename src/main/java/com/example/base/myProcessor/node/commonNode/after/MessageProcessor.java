@@ -1,6 +1,7 @@
 package com.example.base.myProcessor.node.commonNode.after;
 
-import com.example.base.myProcessor.message.MessageContext;
+import com.example.base.myProcessor.event.EventContext;
+import com.example.base.myProcessor.event.message.MessageEvent;
 import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;
 import org.springframework.beans.BeansException;
@@ -17,8 +18,9 @@ public class MessageProcessor implements AfterProcessor, ApplicationContextAware
     public ProcessResult process(ProcessContext context) {
         //消息处理
         String message = context.getMessage();
-        MessageContext messageContext = new MessageContext(message);
-        applicationContext.publishEvent(messageContext);
+        EventContext eventContext = EventContext.builder().message(message).build();
+        MessageEvent messageEvent = new MessageEvent(eventContext);
+        applicationContext.publishEvent(messageEvent);
         return new ProcessResult(true);
     }
 

@@ -14,18 +14,9 @@ public class DefaultProcessorExcutor {
     @Autowired
     private ProcessorFactory factory;
 
-    @Autowired
-    private BeforeHandler beforeHandler;
-
-    @Autowired
-    private CoustomHandler coustomHandler;
-
-    @Autowired
-    private ServiceHandler serviceHandler;
-
-    @Autowired
-    private AfterHandler afterHandler;
-
+    /**
+     * todo 后续processorBean工厂换成concurrnethashmap
+     */
     public void addBeforeNode(Processor node) {
         factory.getBeforeList().add(node);
     }
@@ -43,9 +34,9 @@ public class DefaultProcessorExcutor {
     }
 
     public void execute(ProcessContext context) {
-        beforeHandler.setNext(coustomHandler);
-        coustomHandler.setNext(serviceHandler);
-        serviceHandler.setNext(afterHandler);
-        beforeHandler.execute(context);
+        /**
+         * 这里冗余了 看能不能再优化，初始化时候把责任链生成可能会好一点吗？
+         */
+        factory.getHead().execute(context);
     }
 }
