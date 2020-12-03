@@ -1,15 +1,11 @@
 package com.example.base.myProcessor;
 
 import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.node.commonNode.AfterHandler;
-import com.example.base.myProcessor.node.commonNode.BeforeHandler;
-import com.example.base.myProcessor.node.customNode.CoustomHandler;
-import com.example.base.myProcessor.node.serviceNode.ServiceHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DefaultProcessorExcutor {
+public class ProcessorExcutor {
 
     @Autowired
     private ProcessorFactory factory;
