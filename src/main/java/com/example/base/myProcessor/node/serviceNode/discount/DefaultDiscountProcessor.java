@@ -11,7 +11,9 @@ public class DefaultDiscountProcessor implements DiscountProcessor {
 
     @Override
     public ProcessResult process(ProcessContext context) {
-        System.out.println("业务领域执行2");
+        if (context.getServices().contains(beanName)){
+            System.out.println("执行促销相关业务");
+        }
         return ProcessResult.builder().isSuccess(true).build();
     }
 

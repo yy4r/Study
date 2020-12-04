@@ -12,7 +12,7 @@ public class DefaultOrderProcessor implements OrderProcessor {
     @Override
     public ProcessResult process(ProcessContext context) {
         if (context.getServices().contains(beanName)){
-            System.out.println("业务领域执行1");
+            System.out.println("执行订单相关业务");
         }
         return ProcessResult.builder().isSuccess(true).build();
     }

@@ -29,7 +29,7 @@ public class Trigger implements InitializingBean, ApplicationContextAware{
     @Override
     public void afterPropertiesSet() throws Exception {
         /**
-         * factory编排 可后续考虑做个排序（不过可能会有并发流问题）
+         * factory编排 可后续考虑做个排序 todo 这里换成责任链
          */
         //前置处理
         Map<String, BeforeProcessor> beforeProcessorMap = applicationContext.getBeansOfType(BeforeProcessor.class);
