@@ -9,7 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -20,7 +22,7 @@ public class ProcessorTest {
 
     @Test
     public void test() {
-        List<String> types = new ArrayList<>();
+        Set<String> types = new HashSet<>();
         types.add("risk");
         types.add("limit");
         ProcessContext processContext = ProcessContext.builder().id("1").message("hello 你好").types(types).build();

@@ -1,19 +1,17 @@
-package com.example.base.myProcessor.node.serviceNode.order;
+package com.example.base.myProcessor.node.serviceNode.discount;
 
-import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;
+import com.example.base.myProcessor.context.ProcessContext;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DefaultService01Processor implements Service01Processor {
+public class DefaultDiscountProcessor implements DiscountProcessor {
 
     private String beanName;
 
     @Override
     public ProcessResult process(ProcessContext context) {
-        if (context.getServices().contains(beanName)){
-            System.out.println("业务领域执行1");
-        }
+        System.out.println("业务领域执行2");
         return ProcessResult.builder().isSuccess(true).build();
     }
 
