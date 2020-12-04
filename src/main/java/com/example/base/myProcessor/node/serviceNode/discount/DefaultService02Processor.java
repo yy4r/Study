@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.serviceNode.service02;
+package com.example.base.myProcessor.node.serviceNode.discount;
 
 import com.example.base.myProcessor.context.ProcessResult;
 import com.example.base.myProcessor.context.ProcessContext;

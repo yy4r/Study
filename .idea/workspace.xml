@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/DefaultService01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/DefaultService01Processor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/registry/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/registry/Registry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/context/ProcessContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/context/ProcessContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/ServiceProcessNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/ServiceProcessNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/DefaultService01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/order/DefaultService01Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service01/Service01Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/order/Service01Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service02/DefaultService02Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/discount/DefaultService02Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/service02/Service02Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/node/serviceNode/discount/Service02Processor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606987196215</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="静态工厂">
+      <created>1606997705184</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606997705184</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +379,8 @@
     <MESSAGE value="添加注册器规范 todo" />
     <MESSAGE value="建造者  -&gt;优化" />
     <MESSAGE value="并发处理优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="并发处理优化" />
+    <MESSAGE value="静态工厂" />
+    <option name="LAST_COMMIT_MESSAGE" value="静态工厂" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">
@@ -381,10 +392,10 @@
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606810428334" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606388474839" />
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1606982251659">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1606997820405">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606982251659" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606997820405" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606900159248" />
     <state x="300" y="123" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1606295266096">
       <screen x="0" y="0" width="1440" height="900" />
@@ -408,10 +419,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894934988" />
-    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1606987196028">
+    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1606997704942">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606987196028" />
+    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606997704942" />
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1606901445360" />
     <state width="517" height="466" key="DebuggerActiveHint" timestamp="1606876280295">
       <screen x="0" y="0" width="1440" height="900" />
