@@ -1,11 +1,11 @@
-package com.example.base.myProcessor.node.serviceNode.activity;
+package com.example.base.myProcessor.node.service.discount;
 
-import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;
+import com.example.base.myProcessor.context.ProcessContext;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DefaultActivityProcessor implements ActivityProcessor {
+public class DefaultDiscountProcessor implements DiscountProcessor {
 
     private String beanName;
 

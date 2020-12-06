@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.commonNode;
+package com.example.base.myProcessor.node.common;
 
 import com.example.base.myProcessor.Processor;
 

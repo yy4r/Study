@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.customNode;
+package com.example.base.myProcessor.node.custom;
 
 import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;

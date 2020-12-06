@@ -1,6 +1,6 @@
 package com.example.base.myProcessor.annotation;
 
-import com.example.base.myProcessor.node.customNode.CustomProcessNode;
+import com.example.base.myProcessor.node.custom.CustomProcessNode;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;

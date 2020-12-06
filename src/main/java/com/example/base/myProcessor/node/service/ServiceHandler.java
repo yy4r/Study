@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.commonNode;
+package com.example.base.myProcessor.node.service;
 
 import com.example.base.myProcessor.context.ProcessContext;
 import com.example.base.myProcessor.context.ProcessResult;
@@ -6,10 +6,10 @@ import com.example.base.myProcessor.node.Handler;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AfterHandler extends Handler {
+public class ServiceHandler extends Handler {
     @Override
     public void execute(ProcessContext context) {
-        factory.getAfterList().parallelStream().forEach((node) -> {
+        factory.getServiceList().parallelStream().forEach((node) -> {
             ProcessResult process = node.process(context);
             if (!process.getIsSuccess()) {
                 return;

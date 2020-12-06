@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.serviceNode.poll;
+package com.example.base.myProcessor.poll;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;

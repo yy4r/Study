@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.serviceNode;
+package com.example.base.myProcessor.node.service;
 
 import com.example.base.myProcessor.Processor;
 import org.springframework.beans.factory.BeanNameAware;

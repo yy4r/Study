@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.commonNode.after;
+package com.example.base.myProcessor.node.common.after;
 
 import com.example.base.myProcessor.context.EventContext;
 import com.example.base.myProcessor.event.message.MessageEvent;
