@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeanProcessor implements BeanPostProcessor, ApplicationContextAware {
 
+    /**
+     * 未使用（暂留） 后置处理器预计会使用
+     */
     private ApplicationContext applicationContext;
 
     @Override
