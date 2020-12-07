@@ -1,6 +1,6 @@
-package com.example.base.myProcessor.event.common;
+package com.example.base.myProcessor.event.bean;
 
-import com.example.base.myProcessor.context.EventContext;
+import com.example.base.myProcessor.common.context.EventContext;
 import com.example.base.myProcessor.node.Handler;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;

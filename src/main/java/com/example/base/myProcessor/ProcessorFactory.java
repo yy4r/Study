@@ -1,7 +1,7 @@
 package com.example.base.myProcessor;
 
-import com.example.base.myProcessor.context.EventContext;
-import com.example.base.myProcessor.event.common.BeanHandlerEvent;
+import com.example.base.myProcessor.common.context.EventContext;
+import com.example.base.myProcessor.event.bean.BeanHandlerEvent;
 import com.example.base.myProcessor.node.Handler;
 import com.example.base.myProcessor.node.common.AfterHandler;
 import com.example.base.myProcessor.node.common.BeforeHandler;

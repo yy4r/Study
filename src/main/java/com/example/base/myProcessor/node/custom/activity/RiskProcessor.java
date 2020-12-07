@@ -1,8 +1,8 @@
 package com.example.base.myProcessor.node.custom.activity;
 
-import com.example.base.myProcessor.annotation.ProcessType;
-import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.context.ProcessResult;
+import com.example.base.myProcessor.common.annotation.ProcessType;
+import com.example.base.myProcessor.common.context.ProcessContext;
+import com.example.base.myProcessor.common.context.ProcessResult;
 import com.example.base.myProcessor.node.custom.CustomProcessNode;
 import lombok.Data;
 import org.springframework.stereotype.Component;

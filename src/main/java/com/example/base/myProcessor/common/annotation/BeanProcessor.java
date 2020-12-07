@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.annotation;
+package com.example.base.myProcessor.common.annotation;
 
 import com.example.base.myProcessor.node.custom.CustomProcessNode;
 import org.springframework.beans.BeansException;

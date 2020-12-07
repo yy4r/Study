@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.context;
+package com.example.base.myProcessor.common.context;
 
 import lombok.Builder;
 import lombok.Data;

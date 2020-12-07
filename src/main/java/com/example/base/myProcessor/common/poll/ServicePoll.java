@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.poll;
+package com.example.base.myProcessor.common.poll;
 
 import lombok.Data;
 import org.springframework.beans.factory.InitializingBean;

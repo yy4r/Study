@@ -1,7 +1,7 @@
 package com.example.base.myProcessor.node.service;
 
-import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.context.ProcessResult;
+import com.example.base.myProcessor.common.context.ProcessContext;
+import com.example.base.myProcessor.common.context.ProcessResult;
 import com.example.base.myProcessor.node.Handler;
 import org.springframework.stereotype.Component;
 

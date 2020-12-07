@@ -2,7 +2,7 @@ package com.example.base.myProcessor;
 
 import com.example.base.myProcessor.node.common.after.AfterProcessor;
 import com.example.base.myProcessor.node.common.before.BeforeProcessor;
-import com.example.base.myProcessor.context.ProcessContext;
+import com.example.base.myProcessor.common.context.ProcessContext;
 import com.example.base.myProcessor.node.custom.CustomProcessNode;
 import com.example.base.myProcessor.node.service.ServiceProcessNode;
 import org.springframework.beans.BeansException;

@@ -1,9 +1,9 @@
 package com.example.base.myProcessor.node.common.after;
 
-import com.example.base.myProcessor.context.EventContext;
+import com.example.base.myProcessor.common.context.EventContext;
 import com.example.base.myProcessor.event.message.MessageEvent;
-import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.context.ProcessResult;
+import com.example.base.myProcessor.common.context.ProcessContext;
+import com.example.base.myProcessor.common.context.ProcessResult;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
