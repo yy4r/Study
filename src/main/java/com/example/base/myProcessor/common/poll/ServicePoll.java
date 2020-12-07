@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  todo 线程池做接口隔离，不同领域使用不同领域的线程池
+ *  todo 线程池做接口隔离，后续不同领域使用不同领域的线程池 （修改->做个面向接口编程）
  */
 @Component
 @Data
