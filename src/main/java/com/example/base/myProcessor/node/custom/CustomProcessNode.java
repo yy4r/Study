@@ -1,8 +1,9 @@
 package com.example.base.myProcessor.node.custom;
 
 import com.example.base.myProcessor.Processor;
+import com.example.base.myProcessor.common.constant.ProcessorTypeEnum;
 
 public interface CustomProcessNode extends Processor {
-    String getType();
-    void setType(String type);
+    ProcessorTypeEnum getTypeEnum();
+    void setTypeEnum(ProcessorTypeEnum typeEnum);
 }

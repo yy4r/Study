@@ -16,7 +16,6 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
@@ -90,8 +89,10 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
         System.out.println(types);
         for (Class type : types) {
             Map map = applicationContext.getBeansOfType(type);
-            for (Object o : map.values()) {
-                ProcessType processType = o.getClass().getAnnotation(ProcessType.class);
+            for (Object bean : map.values()) {
+                ProcessType processType = bean.getClass().getAnnotation(ProcessType.class);
+                //存入容器
+                container.put(type,processType.type(),bean);
             }
         }
     }

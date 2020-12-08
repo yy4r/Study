@@ -1,5 +1,7 @@
 package com.example.base.myProcessor.common.annotation;
 
+import com.example.base.myProcessor.common.constant.ProcessorTypeEnum;
+
 import java.lang.annotation.*;
 
 @Documented
@@ -10,5 +12,5 @@ public @interface ProcessType {
     /**
      * 自定义注解 表示执行器领域type
      */
-    String type() default "";
+    ProcessorTypeEnum type();
 }
