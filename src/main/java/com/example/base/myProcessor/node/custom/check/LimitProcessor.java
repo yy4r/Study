@@ -1,4 +1,4 @@
-package com.example.base.myProcessor.node.custom.activity;
+package com.example.base.myProcessor.node.custom.check;
 
 import com.example.base.myProcessor.common.annotation.ProcessType;
 import com.example.base.myProcessor.common.context.ProcessContext;
