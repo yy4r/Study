@@ -97,8 +97,13 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
         }
     }
 
+    public Processor getProcessor(ProcessorTypeEnum typeEnum){
+        Processor processor = (Processor) container.get(Processor.class, typeEnum);
+        return processor;
+    }
+
     /**
-     * todo bean容器
+     *
      */
     private static class Container {
 
@@ -120,14 +125,15 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
             }
         }
 
-        public Map<ProcessorTypeEnum, Object> get(Class clazz, ProcessorTypeEnum processorTypeEnum) {
+        /**
+         * 这里返回object 后续可能有更好的考虑
+         */
+        public Object get(Class clazz, ProcessorTypeEnum processorTypeEnum) {
             Map<ProcessorTypeEnum, Object> processorTypeEnumObjectMap = beanMap.get(clazz);
             if (processorTypeEnum == null || "".equals(processorTypeEnum.getType())) {
                 return processorTypeEnumObjectMap;
             }
-            Map<ProcessorTypeEnum, Object> newProcessorTypeEnumObjectMap = new HashMap<>();
-            newProcessorTypeEnumObjectMap.put(processorTypeEnum, processorTypeEnumObjectMap.get(processorTypeEnum));
-            return newProcessorTypeEnumObjectMap;
+            return processorTypeEnumObjectMap.get(processorTypeEnum);
         }
     }
 

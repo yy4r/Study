@@ -1,5 +1,6 @@
 package com.example.base.myProcessor.common.context;
 
+import com.example.base.myProcessor.common.constant.ProcessorTypeEnum;
 import lombok.Builder;
 import lombok.Data;
 
@@ -21,5 +22,7 @@ public class ProcessContext {
 
     //处理器上下文核心  线程安全+防止npl
     private Map<String,Object> value = new ConcurrentHashMap<>();
+
+    private ProcessorTypeEnum typeEnum;
 
 }
