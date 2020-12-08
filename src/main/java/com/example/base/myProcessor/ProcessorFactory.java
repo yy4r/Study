@@ -26,6 +26,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ProcessorFactory implements BeanNameAware, ApplicationContextAware, InitializingBean {
 
     /**
+     * todo 后续考虑做一个bean容器，通过bean容器做自动化分发策略选择
      * 静态工厂   初始化做编排故r t y目前线程不安全的问题不会发生，用并发map的原因是考虑到以后动态的registry执行器的
      */
     public static Map<String, Processor> factory = new ConcurrentHashMap<>();
