@@ -4,9 +4,7 @@
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/ProcessorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/context/ProcessContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/context/ProcessContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/strategy/ProcessorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/strategy/ProcessorStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/strategy/ProcessorStrategySelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/strategy/ProcessorStrategyDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Trigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/Trigger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +27,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="20201207" />
+        <entry key="$PROJECT_DIR$" value="20201208" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -216,7 +215,9 @@
       <workItem from="1607257918462" duration="2145000" />
       <workItem from="1607331016333" duration="4064000" />
       <workItem from="1607409745530" duration="3827000" />
-      <workItem from="1607428687775" duration="1831000" />
+      <workItem from="1607428687775" duration="2481000" />
+      <workItem from="1607512576464" duration="1510000" />
+      <workItem from="1608284328749" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="test start">
       <created>1605855470051</created>
@@ -407,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607429735406</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="自动策略分发器">
+      <created>1607430552974</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607430552974</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +480,8 @@
     <MESSAGE value="工厂和策略分发器" />
     <MESSAGE value="业务修改" />
     <MESSAGE value="策略分配选择 搭建base" />
-    <option name="LAST_COMMIT_MESSAGE" value="策略分配选择 搭建base" />
+    <MESSAGE value="自动策略分发器" />
+    <option name="LAST_COMMIT_MESSAGE" value="自动策略分发器" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">
@@ -511,11 +520,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894934988" />
-    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1607429735220">
+    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1607430552761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607394692432" />
-    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607429735220" />
+    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607430552761" />
     <state width="517" height="466" key="DebuggerActiveHint" timestamp="1607414236918">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -612,11 +621,11 @@
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606974725245" />
     <state x="1735" y="-65" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@1440.-141.1920.1080" timestamp="1606877321388" />
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606808337645" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1607429744248">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1607431155974">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607394701179" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607429744248" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607431155974" />
     <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1606806977364">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -631,6 +640,10 @@
     </state>
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894475108" />
     <state x="397" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1607257973790" />
+    <state x="503" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608284366691">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="503" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1608284366691" />
     <state x="434" y="199" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606974782601">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

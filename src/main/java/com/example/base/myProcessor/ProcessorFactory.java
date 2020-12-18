@@ -126,7 +126,7 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
         }
 
         /**
-         * 这里返回object 后续可能有更好的考虑
+         * 这里返回object 对象抽象化更加合适
          */
         public Object get(Class clazz, ProcessorTypeEnum processorTypeEnum) {
             Map<ProcessorTypeEnum, Object> processorTypeEnumObjectMap = beanMap.get(clazz);
