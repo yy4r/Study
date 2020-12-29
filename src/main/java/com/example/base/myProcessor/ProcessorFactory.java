@@ -1,12 +1,14 @@
 package com.example.base.myProcessor;
 
-import com.example.base.myProcessor.context.EventContext;
-import com.example.base.myProcessor.event.common.BeanHandlerEvent;
+import com.example.base.myProcessor.common.annotation.ProcessType;
+import com.example.base.myProcessor.common.constant.ProcessorTypeEnum;
+import com.example.base.myProcessor.common.context.EventContext;
+import com.example.base.myProcessor.event.bean.BeanHandlerEvent;
 import com.example.base.myProcessor.node.Handler;
-import com.example.base.myProcessor.node.commonNode.AfterHandler;
-import com.example.base.myProcessor.node.commonNode.BeforeHandler;
-import com.example.base.myProcessor.node.customNode.CoustomHandler;
-import com.example.base.myProcessor.node.serviceNode.ServiceHandler;
+import com.example.base.myProcessor.node.common.AfterHandler;
+import com.example.base.myProcessor.node.common.BeforeHandler;
+import com.example.base.myProcessor.node.custom.CoustomHandler;
+import com.example.base.myProcessor.node.service.ServiceHandler;
 import lombok.Data;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanNameAware;
@@ -17,7 +19,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -26,13 +28,19 @@ import java.util.concurrent.ConcurrentHashMap;
 @Data
 public class ProcessorFactory implements BeanNameAware, ApplicationContextAware, InitializingBean {
 
+    //todo 后续考虑做一个bean容器，通过bean容器做自动化分发策略选择
+    private Container container = new Container();
+    /**
+     * 静态工厂   初始化做编排故r t y目前线程不安全的问题不会发生，用并发map的原因是考虑到以后动态的registry执行器的
+     */
+    public static Map<String, Processor> factory = new ConcurrentHashMap<>();
+
     private String beanName;
 
     private ApplicationContext applicationContext;
 
     private Handler head;
 
-    private Map<String, Processor> factory = new ConcurrentHashMap<>();
     // TODO: 2020/12/1 可考虑更换成map
     private Map<String/**type*/, List<Processor>> map = new ConcurrentHashMap<>();
 
@@ -44,11 +52,9 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
 
     private List<Processor> customList = new ArrayList<>();
 
-    //工厂初始化
+    //工厂初始化编排
     @PostConstruct
     public void init() {
-        String[] names = applicationContext.getBeanNamesForType(ProcessorFactory.class);
-        System.out.println(Arrays.toString(names)+beanName);
         Map<String, Processor> beansOfType = applicationContext.getBeansOfType(Processor.class);
         factory.putAll(beansOfType);
     }
@@ -58,12 +64,8 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
         this.beanName = beanName;
     }
 
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext;
-    }
 
-    @Override
+    @Override//contants
     public void afterPropertiesSet() throws Exception {
         List<Handler> handlers = new ArrayList<>();
         //责任链事件编排
@@ -79,4 +81,60 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
         EventContext eventContext = EventContext.builder().handlers(handlers).build();
         applicationContext.publishEvent(new BeanHandlerEvent(eventContext));
     }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+        Class[] types = new Class[]{Processor.class};
+        System.out.println(types);
+        for (Class type : types) {
+            Map map = applicationContext.getBeansOfType(type);
+            for (Object bean : map.values()) {
+                ProcessType processType = bean.getClass().getAnnotation(ProcessType.class);
+                //存入容器
+                container.put(type,processType.type(),bean);
+            }
+        }
+    }
+
+    public Processor getProcessor(ProcessorTypeEnum typeEnum){
+        Processor processor = (Processor) container.get(Processor.class, typeEnum);
+        return processor;
+    }
+
+    /**
+     *
+     */
+    private static class Container {
+
+        private final Map<Class, Map<ProcessorTypeEnum, Object>> beanMap;
+
+
+        private Container() {
+            this.beanMap = new HashMap<>();
+        }
+
+        public void put(Class clazz, ProcessorTypeEnum processorTypeEnum, Object bean) {
+            Map<ProcessorTypeEnum, Object> activityTypeEnumObjectMap = beanMap.get(clazz);
+            if (activityTypeEnumObjectMap == null) {
+                activityTypeEnumObjectMap = new HashMap<>();
+                activityTypeEnumObjectMap.put(processorTypeEnum, bean);
+                beanMap.put(clazz, activityTypeEnumObjectMap);
+            } else {
+                beanMap.get(clazz).put(processorTypeEnum, bean);
+            }
+        }
+
+        /**
+         * 这里返回object 对象抽象化更加合适
+         */
+        public Object get(Class clazz, ProcessorTypeEnum processorTypeEnum) {
+            Map<ProcessorTypeEnum, Object> processorTypeEnumObjectMap = beanMap.get(clazz);
+            if (processorTypeEnum == null || "".equals(processorTypeEnum.getType())) {
+                return processorTypeEnumObjectMap;
+            }
+            return processorTypeEnumObjectMap.get(processorTypeEnum);
+        }
+    }
+
 }

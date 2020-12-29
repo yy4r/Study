@@ -1,7 +1,7 @@
 package com.example.base.myProcessor.node;
 
 import com.example.base.myProcessor.ProcessorFactory;
-import com.example.base.myProcessor.context.ProcessContext;
+import com.example.base.myProcessor.common.context.ProcessContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

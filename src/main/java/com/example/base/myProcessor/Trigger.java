@@ -1,10 +1,10 @@
 package com.example.base.myProcessor;
 
-import com.example.base.myProcessor.node.commonNode.after.AfterProcessor;
-import com.example.base.myProcessor.node.commonNode.before.BeforeProcessor;
-import com.example.base.myProcessor.context.ProcessContext;
-import com.example.base.myProcessor.node.customNode.CustomProcessNode;
-import com.example.base.myProcessor.node.serviceNode.ServiceProcessNode;
+import com.example.base.myProcessor.node.common.after.AfterProcessor;
+import com.example.base.myProcessor.node.common.before.BeforeProcessor;
+import com.example.base.myProcessor.common.context.ProcessContext;
+import com.example.base.myProcessor.node.custom.CustomProcessNode;
+import com.example.base.myProcessor.node.service.ServiceProcessNode;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class Trigger implements InitializingBean, ApplicationContextAware{
     @Override
     public void afterPropertiesSet() throws Exception {
         /**
-         * factory编排 可后续考虑做个排序（不过可能会有并发流问题）
+         * factory编排 可后续考虑做个排序 todo 感觉模版方法模式比较合适
          */
         //前置处理
         Map<String, BeforeProcessor> beforeProcessorMap = applicationContext.getBeansOfType(BeforeProcessor.class);
