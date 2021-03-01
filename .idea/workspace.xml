@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/annotation/BeanProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/annotation/BeanProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/poll/ServicePoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/poll/ServicePoll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614599948056</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="postProcessor修改">
+      <created>1614600579884</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1614600579884</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test start" />
     <MESSAGE value="Processor" />
     <MESSAGE value="更换名字" />
     <MESSAGE value="base" />
@@ -503,7 +509,8 @@
     <MESSAGE value="自动策略分发器" />
     <MESSAGE value="状态机初始化" />
     <MESSAGE value="规范" />
-    <option name="LAST_COMMIT_MESSAGE" value="规范" />
+    <MESSAGE value="postProcessor修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="postProcessor修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">
@@ -548,11 +555,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894934988" />
-    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1614599947823">
+    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1614600579643">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607394692432" />
-    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614599947823" />
+    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614600579643" />
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607430552761" />
     <state width="517" height="466" key="DebuggerActiveHint" timestamp="1607414236918">
       <screen x="0" y="0" width="1440" height="900" />
@@ -650,11 +657,11 @@
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606974725245" />
     <state x="1735" y="-65" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@1440.-141.1920.1080" timestamp="1606877321388" />
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606808337645" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614599950189">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614601148476">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607394701179" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614599950189" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601148476" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607431155974" />
     <state x="320" y="208" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1609235175528" />
     <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1606806977364">
@@ -689,10 +696,11 @@
     </state>
     <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614596434030" />
     <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606825920212" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1607395528435">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1614601217042">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607395528435" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601217042" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606899934502" />
   </component>
   <component name="XDebuggerManager">
