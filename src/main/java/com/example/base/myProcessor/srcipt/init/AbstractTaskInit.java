@@ -15,6 +15,10 @@ public abstract class AbstractTaskInit implements InitializingBean {
     @Autowired
     private StateFactory stateFactory;
 
+    /**
+     * 将模版抽象出来
+     * @throws Exception
+     */
     @Override
     public void afterPropertiesSet() throws Exception {
         Task task = new Task();

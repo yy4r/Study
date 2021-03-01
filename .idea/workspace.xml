@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/utils/Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/utils/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/enums/MainTaskStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/enums/SelectionTaskEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/enums/ServiceResultCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/enums/SubTaskStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/enums/TaskTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/factory/StateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/factory/StateFactoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/AbstractTaskInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/task/LeaderSubTaskInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/task/MainTaskInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/task/MemberSubTaskInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/task/SelectionTaskInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/DefaultStateEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/StateChart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/StateEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/StateNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/StateTransferAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/StateTransferContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/state/StateTransferLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/task/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/task/TaskHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/AbstractTaskInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/init/AbstractTaskInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/task/TaskHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt/task/TaskHolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +82,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.base.myProcessor.event.message" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.base.myProcessor.srcipt.init.task" />
-      <recent name="com.example.base.myProcessor.node.commonNode.after" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.base.myProcessor.srcipt" />
       <recent name="com.example.base.myProcessor.srcipt.script" />
@@ -120,6 +93,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/common/utils" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/srcipt" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.base.myProcessor.srcipt.init.task" />
+      <recent name="com.example.base.myProcessor.node.commonNode.after" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ProcessorTest.test">
@@ -516,7 +496,8 @@
     <MESSAGE value="业务修改" />
     <MESSAGE value="策略分配选择 搭建base" />
     <MESSAGE value="自动策略分发器" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动策略分发器" />
+    <MESSAGE value="状态机初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="状态机初始化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">

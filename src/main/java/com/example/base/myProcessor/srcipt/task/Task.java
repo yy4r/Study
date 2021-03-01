@@ -16,5 +16,5 @@ public class Task {
     /**
      * 状态机
      */
-    private Map<String/*state_chart_name*/, StateEngine> stateEngineMap = new HashMap<>();
+    private Map<String, StateEngine> stateEngineMap = new HashMap<>();
 }
