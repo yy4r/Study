@@ -1,7 +1,5 @@
 package com.example.base.myProcessor.command;
 
-import com.example.base.myProcessor.common.context.ProcessResult;
-
 import java.util.List;
 
 /**
@@ -12,9 +10,9 @@ public interface Executor {
 
     /**
      * 抽象出来  command做个分发器反射调用 后续编写 todo
-     * @param type
-     * @param commands
+     * @param name
+     * @param
      * @return
      */
-    ProcessResult executor(String type, List<String> commands);
+    void executor(String name, List<String> actions);
 }

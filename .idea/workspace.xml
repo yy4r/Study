@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bbaff63-fba0-4a55-9e76-c0e0745635d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/command/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/command/ActivityCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/command/DefaultExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/command/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/base/myProcessor/command/Executor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +25,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -449,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614601321456</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="command初始化">
+      <created>1614601482776</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1614601482776</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更换名字" />
     <MESSAGE value="base" />
     <MESSAGE value="注解测试" />
     <MESSAGE value="自定义执行器 选择+注解解耦合" />
@@ -517,7 +525,8 @@
     <MESSAGE value="规范" />
     <MESSAGE value="postProcessor修改" />
     <MESSAGE value="线程池思考" />
-    <option name="LAST_COMMIT_MESSAGE" value="线程池思考" />
+    <MESSAGE value="command初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="command初始化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Scopes" timestamp="1606207559366">
@@ -529,10 +538,11 @@
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606810428334" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606388474839" />
-    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1607429954805">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1614601988841">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607395399093" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601988841" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1607429954805" />
     <state x="300" y="123" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1606295266096">
       <screen x="0" y="0" width="1440" height="900" />
@@ -562,11 +572,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="483" y="163" width="657" height="574" key="#xdebugger.evaluate/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894934988" />
-    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1614601321256">
+    <state x="0" y="49" key="CommitChangelistDialog2" timestamp="1614601482556">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607394692432" />
-    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601321256" />
+    <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601482556" />
     <state x="0" y="49" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607430552761" />
     <state width="517" height="466" key="DebuggerActiveHint" timestamp="1607414236918">
       <screen x="0" y="0" width="1440" height="900" />
@@ -664,11 +674,11 @@
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606974725245" />
     <state x="1735" y="-65" key="SettingsEditor/0.0.1440.900/1440.-141.1920.1080@1440.-141.1920.1080" timestamp="1606877321388" />
     <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606808337645" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614601323202">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614601485374">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1607394701179" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601323202" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601485374" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607431155974" />
     <state x="320" y="208" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1609235175528" />
     <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1606806977364">
@@ -685,10 +695,10 @@
     </state>
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.-141.1920.1080@0.0.1440.900" timestamp="1606894475108" />
     <state x="397" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1607257973790" />
-    <state x="503" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614596368670">
+    <state x="503" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614601569543">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614596368670" />
+    <state x="503" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1614601569543" />
     <state x="503" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.-118.1920.1057@0.23.1440.877" timestamp="1608284366691" />
     <state x="434" y="199" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606974782601">
       <screen x="0" y="0" width="1440" height="900" />
