@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class LimitProcessor implements CustomProcessNode {
 
-    private ProcessorTypeEnum typeEnum;
+    private ProcessorTypeEnum typeEnum = ProcessorTypeEnum.LIMIT;
 
     @Override
     public ProcessResult process(ProcessContext context) {

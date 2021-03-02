@@ -23,7 +23,7 @@ public class ProcessorTest {
         Set<String> types = new HashSet<>();
         types.add("risk");
         types.add("limit");
-        ProcessContext processContext = ProcessContext.builder().id("1").message("hello 你好").types(types).build();
+        ProcessContext processContext = ProcessContext.builder().id("1").message("hello 你好").types(types).services(new HashSet<>()).build();
         trigger.trigger(processContext);
     }
 

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class RiskProcessor implements CustomProcessNode {
 
-    private ProcessorTypeEnum typeEnum;
+    private ProcessorTypeEnum typeEnum = ProcessorTypeEnum.RISK;
 
     @Override
     public ProcessResult process(ProcessContext context) {

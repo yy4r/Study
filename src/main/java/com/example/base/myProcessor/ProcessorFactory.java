@@ -42,7 +42,7 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
     private Handler head;
 
     // TODO: 2020/12/1 可考虑更换成map
-    private Map<String/**type*/, List<Processor>> map = new ConcurrentHashMap<>();
+    private Map<String, List<Processor>> map = new ConcurrentHashMap<>();
 
     private List<Processor> beforeList = new ArrayList<>();
 
@@ -65,7 +65,7 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
     }
 
 
-    @Override//contants
+    @Override
     public void afterPropertiesSet() throws Exception {
         List<Handler> handlers = new ArrayList<>();
         //责任链事件编排
@@ -92,14 +92,16 @@ public class ProcessorFactory implements BeanNameAware, ApplicationContextAware,
             for (Object bean : map.values()) {
                 ProcessType processType = bean.getClass().getAnnotation(ProcessType.class);
                 //存入容器
-                container.put(type,processType.type(),bean);
+                if (processType == null) {
+                    continue;
+                }
+                container.put(type, processType.type(), bean);
             }
         }
     }
 
-    public Processor getProcessor(ProcessorTypeEnum typeEnum){
-        Processor processor = (Processor) container.get(Processor.class, typeEnum);
-        return processor;
+    public Processor getProcessor(ProcessorTypeEnum typeEnum) {
+        return (Processor) container.get(Processor.class, typeEnum);
     }
 
     /**

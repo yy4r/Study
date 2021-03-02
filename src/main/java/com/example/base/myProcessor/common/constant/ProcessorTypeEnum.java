@@ -4,7 +4,9 @@ package com.example.base.myProcessor.common.constant;
 public enum ProcessorTypeEnum {
     DISCOUNT("discount", "促销领域"),
     PRIZE("prize", "奖品领域"),
-    VOUCHER("voucher", "优惠券领域");
+    VOUCHER("voucher", "优惠券领域"),
+    LIMIT("limit", "限制校验"),
+    RISK("risk", "风控领域");
 
 
     ProcessorTypeEnum(String type, String memo) {
